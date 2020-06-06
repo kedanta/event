@@ -60,7 +60,7 @@
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link js-scroll-trigger" href="#">Home</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link js-scroll-trigger" href="#home">Home</a></li>
                       <li class="rd-nav-item"><a class="rd-nav-link js-scroll-trigger" href="#countdown">Waktu Mundur</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link js-scroll-trigger" href="#tardidi3">Tentang Tardidi</a>
@@ -86,7 +86,7 @@
         <div class="section-swiper-content">
           <div class="container">
             <div class="row justify-content-lg-center">
-              <div class="col-lg-10">
+              <div class="col-lg-10" id="home">
                 <div class="badge-promo wow fadeScale" data-wow-delay=".6s"><span class="badge-promo-text">Sesi 3</span>
                   <svg class="badge-promo-icon" width="319" height="49" viewBox="0 0 319 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H319L299 25L319 49H0L20 25L0 0Z" fill="url( #svg-gradient-primary )"></path>
@@ -108,7 +108,7 @@
                       </div>
                       <div class="unit-body">
                         <h5 class="text-spacing-100"><span class="big">
-                            <time datetime="2020-19-06">Jumat, 19 Juni 2020</time></span></h5>
+                            <time datetime="2020-19-06">----- Juni 2020</time></span></h5>
                       </div>
                     </div>
                   </li>
@@ -257,6 +257,21 @@
                   </div>
                 </div>
             </div>
+			<div class="col">
+                <div>
+                  <!-- Speaker-->
+                  <div class="speaker">
+                    <div class="speaker-img" data-triangle=".speaker-overlay">
+                      <div class="speaker-overlay"></div><a href="#"><img src="images/speaker-01-330x354.jpg" alt="" width="330" height="354"/></a>
+                      <ul class="speaker-social-list">
+                        <li><a class="icon icon-xs facebook fab fa-facebook-f" href="https://facebook.com/win.pbean" target="_blank"></a></li>
+                      </ul>
+                    </div>
+                    <h5 class="speaker-title"><a href="#">Pdt. Refelindo Panggabean, S.Th</a></h5>
+                    <p class="speaker-position">PDT GKPI XI JAWA-KALIMANTAN</p>
+                  </div>
+                </div>
+            </div>
           	</div>
 			<h3>Moderator</h3>
 			<div class="row row-30">
@@ -306,25 +321,21 @@
 				<div data-form-type="formoid">
               <form class="rd-mailform rd-form" id="contact-form" enctype="multipart/form-data" action="https://mobirise.com/" method="POST" data-form-title="Mobirise Form">
 				  <input type="hidden" name="email" data-form-email="true" value="rrZcGw1wwDGuEr2Vk99H2EkGSSYwayk1SpPXTkA3yBvTdnSLD7J9SPrNg25ZaLwKSIiHhdunNzh3zwfJYUAsDByHYQieUqIjiDfjJGVAib6yQtGVQgYDNA/PkwIyomiM">
-						<div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Terimakasih, nantikan balasan dari kami. Horas!</div>
-                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                            </div>
-                        </div>
+						
                 <div class="row row-10 row-narrow-xs">
                   <div class="col-lg-6">
                     <div class="form-wrap">
-                      <input class="form-input" type="text" name="name" placeholder="Nama*" data-form-field="Name" required="required" id="name-form4-2">
+                      <input class="form-input" type="text" name="name" placeholder="Nama*" data-form-field="Name" data-constraints="@Required" id="name-form4-2">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-wrap">
-                      <input class="form-input" type="text" name="phone" placeholder="Telepon/Email*" data-form-field="Phone" required="required" id="phone-form4-2">
+                      <input class="form-input" type="text" name="phone" placeholder="Telepon/Email*" data-form-field="Phone" data-constraints="@Required" id="phone-form4-2">
                     </div>
                   </div>
 				<div class="col-lg-12">
                     <div class="form-wrap">
-                      <input class="form-input" type="text" name="gereja" placeholder="Asal Gereja*" data-form-field="gereja"  required="required" id="email-form4-2">
+                      <input class="form-input" type="text" name="gereja" placeholder="Asal Gereja*" data-form-field="gereja"  data-constraints="@Required" id="email-form4-2">
                     </div>
                   </div>
                   <div class="col-lg-12">
@@ -332,9 +343,14 @@
                       <textarea class="form-input" rows="5" name="message" placeholder="Pesan Lainnya..." data-form-field="Message" id="message-form4-2"></textarea>
                     </div>
                   </div>
+					<div class="row">
+                            <div hidden="hidden"  data-form-alert="" class="alert alert-success ml-4 w-100">Terimakasih, nantikan balasan dari kami. Horas!</div>
+                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            </div>
+                        </div>
                   <div class="col-lg-12">
                     <div class="form-button">
-                      <button class="button button-lg button-primary" type="submit" value="Send message" name="submit" id="submitButton" title="Kirim pesan"><span class="button-overlay"></span><span>Daftar</span></button>
+                      <button class="btn button button-lg button-primary" type="submit" value="Send message" name="submit" id="submitButton" title="Kirim pesan"><span class="button-overlay"></span><span>Daftar</span></button>
                     </div>
                   </div>
                 </div>
@@ -347,16 +363,22 @@
                   <h5 class="block-address-title">Alamat</h5>
                   <p class="block-address-text">Komp. Gereja HKBP Kasih<br class="d-none d-xs-block"> Prabumulih, Sumatera Selatan
                   </p>
+					<p class="block-address-text">Komp. Gereja Patih Galung<br class="d-none d-xs-block"> Prabumulih, Sumatera Selatan
+                  </p>
                 </div>
+				  <hr>
+				  <!--
                 <div class="block-address-item">
                   <h5 class="block-address-title">Telepon/WA</h5>
                   <p class="block-address-text"><a href="tel:+6281234311725">+62 812 3431 1725</a> - <span>Hendric Simarmata</span>
                   </p>
                 </div>
+				  -->
                 <div class="block-address-item">
                   <h5 class="block-address-title">Email</h5>
                   <p class="block-address-text"><a href="mailto:contact@kedanta.team">contact@kedanta.team</a></p>
                 </div>
+				  <hr>
                 <div class="block-address-item">
                   <h5 class="block-address-title">Ikuti kami di:</h5>
                   <ul class="list-inline list-inline-xs">
@@ -551,5 +573,6 @@
 	<script src="js/formid.js"></script>
 	<script src="js/form-contact.js"></script>
 	<script src="js/agency.js"></script>
+	<script src="assets/js/bootstrap.min.js?h=d26dd540fffeed3ab1b4323b5a1feee3"></script>
   </body>
 </html>
