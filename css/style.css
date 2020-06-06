@@ -2417,6 +2417,7 @@ img {
 	left: 0;
 	right: 35%;
 	bottom: -20px;
+	top: 100px;
 	border-top: 20px solid #ffffff;
 	border-bottom: 20px solid #ffffff;
 	border-right: 20px solid #ffffff;
@@ -2450,6 +2451,7 @@ img {
 	}
 	.images-box-item-left {
 		left: -120px;
+		top: 190px;
 	}
 }
 
