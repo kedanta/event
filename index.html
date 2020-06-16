@@ -354,17 +354,17 @@
                 <div class="row row-10 row-narrow-xs">
                   <div class="col-lg-6">
                     <div class="form-wrap">
-                      <input class="form-control form-input" title="Isi Nama Kamu (Wajib)" data-msg="Harap masukkan Nama" required="" type="text" name="name" placeholder="Nama dan Marga (Wajib)" data-form-field="Name" id="name-form4-2">
+                      <input class="form-control form-input" title="Isi Nama Kamu (Wajib)" data-msg="Harap masukkan Nama" required oninvalid="this.setCustomValidity('Ups.. Data tidak boleh kosong')" oninput="setCustomValidity('')" type="text" name="name" placeholder="Nama dan Marga (Wajib)" data-form-field="Name" id="name-form4-2">
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-wrap">
-                      <input class="form-control form-input" title="Isi No. Telepon/Email Kamu (Wajib)" data-msg="Harap masukkan email." required="" type="text" name="Email" placeholder="Email atau Whatsapp (Wajib)" data-form-field="Email" id="email-form4-2">
+                      <input class="form-control form-input" title="Isi No. Telepon/Email Kamu (Wajib)" data-msg="Harap masukkan email." required oninvalid="this.setCustomValidity('Ups.. Data tidak boleh kosong')" type="text" name="Email" placeholder="Email atau Whatsapp (Wajib)" data-form-field="Email" id="email-form4-2">
                     </div>
                   </div>
 				<div class="col-lg-12">
                     <div class="form-wrap">
-                      <input class="form-control form-input" title="Asal Gereja" data-msg="" type="text" name="Gereja" placeholder="Asal Gereja (Wajib)" data-form-field="Gereja" id="phone-form4-2">
+                      <input class="form-control form-input" required oninvalid="this.setCustomValidity('Ups.. Data tidak boleh kosong')" title="Asal Gereja" data-msg="" type="text" name="Gereja" placeholder="Asal Gereja (Wajib)" data-form-field="Gereja" id="phone-form4-2">
                     </div>
                   </div>
                   <div class="col-lg-12">
