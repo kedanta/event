@@ -4,32 +4,14 @@
 	overflow-x: hidden!important;
 }
 
-.tableFixHead thead{
+.tableFixHead tbody{
 
 }
 
 .tableFixHead thead tr th { 
 	position: sticky;
 	top: 0;
-	border:0;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-	background: white!important;
-}
-
-
-
-/* Just common table stuff. Really. */
-.tableFixHead table  { 
-	border-collapse: collapse;
-	width: 100%;
-	display: -moz-groupbox;
-}
-
-.tableFixHead tr th td {
-	padding: 8px 16px;
-
-}
-
-.tableFixHead th     {
-	background:#eee;
+	background-color: #26264B;
+	color: #fff;
 }
