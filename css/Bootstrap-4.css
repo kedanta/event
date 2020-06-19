@@ -1,11 +1,8 @@
-.tableFixHead          { 
+
+.tableFixHead { 
 	overflow-y: scroll;
 	height: 300px; 
 	overflow-x: hidden!important;
-}
-
-.tableFixHead tbody{
-
 }
 
 .tableFixHead thead tr th { 
