@@ -1,12 +1,14 @@
 .tableFixHead          { 
 	overflow-y: scroll;
 	height: 300px; 
+	overflow-x: hidden!important;
 }
 
 .tableFixHead thead tr th { 
 	position: sticky;
 	top: 0;
 	border:0;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -26,4 +28,3 @@
 .tableFixHead th     {
 	background:#eee;
 }
-
