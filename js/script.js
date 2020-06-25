@@ -1562,7 +1562,7 @@
 
     // Countdown
     if ( plugins.countdown.length ) {
-      for ( var i = 0; i < plugins.countdown.length; i++) {
+     for ( var i = 0; i < plugins.countdown.length; i++) {
         var
           node = plugins.countdown[i],
           countdown = aCountdown({
