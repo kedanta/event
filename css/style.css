@@ -98,14 +98,14 @@ p {
 
 ul,
 ol {
-	list-style: none;
+	/*list-style: none;*/
 	padding: 0;
 	margin: 0;
 }
 
 ul li,
 ol li {
-	display: block;
+	/*display: block;*/
 }
 
 dl {
